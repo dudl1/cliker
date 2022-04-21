@@ -1,0 +1,86 @@
+.account {
+    position: absolute;
+    width: calc(100% - 30px);
+    height: calc(100% - 15px);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.accountWrap {
+    margin: -30px 90%;
+    width: 10%;
+    height: 4.5%;
+    border-radius: 17px;
+    background: #7cc8de;
+    opacity: 0;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+}
+.accountWrap.active {
+    position: relative;
+    margin: 0px 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: 17px;
+    background: #7cc8de;
+    transform: translateX(0%);
+    opacity: 1;
+}
+.accountWrap > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100% - 40px);
+    padding: 10px;
+    padding-top: 30px;
+    color: #fff;
+}
+.accountWrap > div > span { font-size: 23px; font-weight: 500; }
+.accountWrap > div > div { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 50px);
+    margin-top: 25px;
+}
+.profileTsK {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.profileTsK > img {
+    height: 100%;
+    border: 2px solid #ffffff;
+    border-radius: 60px;
+}
+.topTsK > span {
+    margin-top: 10px;
+}
+.bottomTsK {
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 1px);
+}
+.bottomTsK > input {
+    width: 60%;
+    max-width: 220px;
+    min-width: 170px;
+    height: 3.5em;
+    border-radius: 15px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background: none;
+    font-size: 15px;
+    font-family: Inter,sans-serif;
+    font-weight: 500;
+    transition: .3s ease-in-out;
+}
+.bottomTsK > input:active {
+    transform: scale(0.95);
+}

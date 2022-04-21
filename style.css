@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body, .container {
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+.container {
+    display: grid;
+    grid-template-rows: 100px auto;
+}
+.top {
+    display: flex;
+    font-size: 26px;
+}
+.wPg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.settingBtn, .accountBtn {
+    width: 55px;
+    height: 55px;
+}
+.settingBtn { margin-left: 15px; }
+.accountBtn { margin-right: 15px; }
+.settingBtnAppear, .accountImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 14px;
+    background: #13c3138e;
+}
+.settingBtnAppear > img,
+.accountImg > img {
+    height: 60%;
+    transition: .3s ease-in-out;
+}
+.topActiveImg {
+    transform: rotate(-60deg);
+}
+.accountImg { background: #139dc38e; }
+.screens {
+    position: absolute;
+    pointer-events: none;
+    margin-top: 100px;
+    width: 100%;
+    height: calc(100% - 100px);
+}
+.screens.active {
+    pointer-events: fill;
+}

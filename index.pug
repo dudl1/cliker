@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, user-scalable=no")
+        title PizzaMagnat
+    body
+        style
+            include style.css
+        div.container
+            div.top
+                div.wPg
+                    div.settingBtn
+                        div.settingBtnAppear
+                            img(src="img/setting.png")
+                    div.title
+                        span PizzaMagnat
+                    div.accountBtn
+                        div.accountImg
+                            img(src="img/vlada4.png")
+            div.center
+                include fragments/game.pug
+            div.screens
+                include fragments/setting.pug
+                include fragments/account.pug
+        script
+            include index.js

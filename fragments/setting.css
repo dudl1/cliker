@@ -1,0 +1,91 @@
+.setting {
+    position: absolute;
+    width: calc(100% - 30px);
+    height: calc(100% - 15px);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.settingWrap {
+    margin: -30px 0%;
+    width: 10%;
+    height: 4.5%;
+    border-radius: 17px;
+    background: #7dd77d;
+    opacity: 0;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+}
+.settingWrap.active {
+    position: relative;
+    margin: 0px 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: 17px;
+    background: #7dd77d;
+    opacity: 1;
+    z-index: 999999;
+}
+.settingWrap > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    padding-top: 30px;
+    color: #fff;
+}
+.settingWrap > div > span { font-size: 23px; font-weight: 500; }
+.settingWrap > div > div {
+    margin-top: 25px;
+    width: 100%;
+    float: left;
+}
+.todosTsK {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-top: 5px;
+    padding: 20px;
+    font-size: 19px;
+    font-weight: 500;
+}
+.todosTsK:nth-child(4) { display: flex; flex-direction: row; }
+.customCheckbox {
+    position: absolute;
+    opacity: 0;
+}
+.customCheckbox + label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.customCheckbox+label::after {
+    content: ' ';
+    width: 1em;
+    height: 1em;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    background: url(img/cross.png);
+    background-size: 20px 20px;
+    transition: .2s ease-in-out;
+}
+.customCheckbox:checked+label::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(img/mark.png);
+    background-size: 20px 20px;
+}
+.todosTsK > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 2.5em;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    background: 0 0;
+}
+.todosTsK > button > img {
+    height: 75%;
+}

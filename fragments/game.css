@@ -1,0 +1,6 @@
+.containerGame {
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    height: calc(100% - 100px);
+}

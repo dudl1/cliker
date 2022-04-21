@@ -1,0 +1,20 @@
+div.setting
+    style
+        include setting.css
+    div.settingWrap
+        div
+            span Настройки
+            div
+                div.todosTsK.soundsTsK
+                    input#sound.customCheckbox(type="checkbox", name="")
+                    label Звук
+                div.todosTsK.musicTsK
+                    input#music.customCheckbox(type="checkbox", name="")
+                    label Музыка
+                div.todosTsK.fpsTsK
+                    input#fps.customCheckbox(type="checkbox", name="")
+                    label Показать FPS
+                div.todosTsK.installTsK
+                    label Установить на смартфон
+                    button#install(type="button", name="")
+                        img(src="img/download.png")
